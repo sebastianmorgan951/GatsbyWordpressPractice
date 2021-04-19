@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import Image from 'gatsby-image'
+
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -28,6 +28,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 export default IndexPage
+
 export const pageQuery = graphql`
   query {
     allWpPost(sort: { fields: [date] }) {
